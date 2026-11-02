@@ -10,6 +10,8 @@ This was an educational simulation, not employment or a production incident resp
 | --- | --- |
 | [Log4j advisory email](docs/log4j-advisory.md) | Explain the vulnerability, identify the potentially affected staging environment, and request remediation and verification. |
 | [Python dictionary attack script](bruteforce.py) | Try a supplied password list against the exercise ZIP and stop after successful extraction. |
+| [Encrypted exercise archive](enc.zip) | Password-protected ZIP supplied for the Forage recovery exercise. |
+| [Exercise password list](rockyou.txt) | Small RockYou subset supplied with the simulation, not the full RockYou wordlist. |
 
 ## Task 1: Vulnerability research and communication
 
@@ -37,13 +39,15 @@ Although the exercise calls this brute forcing, this implementation is specifica
 
 Requires Python 3 and its standard library; no third-party packages are needed.
 
-Obtain the exercise pack from the [Forage simulation](https://www.theforage.com/simulations/aig/cybersecurity-ku1i). Place its `enc.zip` and `rockyou.txt` next to `bruteforce.py`, then run from that directory:
+The repository already includes `enc.zip` and the small `rockyou.txt` exercise wordlist alongside `bruteforce.py`. Clone the repository and run:
 
 ```sh
+git clone https://github.com/drat-git/aig-forage-cybersecurity.git
+cd aig-forage-cybersecurity
 python3 bruteforce.py
 ```
 
-The recovered document appears inside `recovered/`. The downloaded archive, wordlist, and recovered document are excluded from this repository. Missing inputs or unsupported ZIP formats require separate handling; the script is scoped to the supplied exercise files.
+The recovered document appears inside `recovered/`, which remains excluded from version control. No separate exercise-file download is needed. The script is scoped to the supplied exercise files; unsupported ZIP formats require separate handling.
 
 ## Verification
 

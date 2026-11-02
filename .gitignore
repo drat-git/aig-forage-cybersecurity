@@ -1,6 +1,4 @@
-# Local exercise inputs and recovered content
-enc.zip
-rockyou.txt
+# Generated recovery output and local exercise folders
 recovered/
 EncryptedFilePack/
 *.docx
