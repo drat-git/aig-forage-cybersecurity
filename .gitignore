@@ -1,0 +1,13 @@
+# Local exercise inputs and recovered content
+enc.zip
+rockyou.txt
+recovered/
+EncryptedFilePack/
+*.docx
+
+# Other local workspace artifacts
+outputs/
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
